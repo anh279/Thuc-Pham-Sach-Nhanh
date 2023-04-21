@@ -23,9 +23,6 @@ a {
   text-decoration: none;
   color: #000;
 }
-ul {
-  list-style-type: none;
-}
 /* Header */
 .header {
   display: flex;
@@ -54,7 +51,6 @@ ul {
 
 .nav ul {
   display: flex;
-  list-style: none;
 }
 
 .nav li {
@@ -296,7 +292,6 @@ ul {
   top: 0;
   right: 10px;
 }
-
 /* Main */
 .background {
   display: flex;
@@ -319,6 +314,7 @@ ul {
   margin-top: 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .background .breadcrumb > li a {
@@ -336,78 +332,51 @@ ul {
   content: "\f105";
   font-size: 1rem;
 }
-
+/* main-content */
 .main-content {
-  margin-left: auto;
-  max-width: 50%;
-  position: relative;
-  width: 100%;
-  padding-right: 60px;
-  padding-left: 60px;
+  margin-top: 65px;
+  text-align: center;
 }
 
 .main-content .title {
-  display: block;
-  padding: 10px 0;
   text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: normal;
 }
 
-.main-content .form-control {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+.main-content form {
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 44%;
+  margin-top: 25px;
 }
 
-.main-content .wrap-form {
-  width: 100%;
-}
-
-.main-content .form-control .control {
-  display: inline-block;
-  width: 70%;
-  height: 33px;
-  border: 1px solid #ccc;
-  padding: 0 5px;
-  box-sizing: border-box;
-}
-
-.main-content .form-control .label {
-  margin-top: 12px;
-}
-
-.main-content .form-control span {
-  float: left;
-  color: #54595a;
-  width: 30%;
-}
-
-.main-content .form-control .label .comment {
-  width: 70%;
-  display: inline-block;
-  height: 150px;
-  resize: none;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
+.main-content form .control-email {
+  margin-top: 20px;
   padding: 5px;
+  width: 255px;
 }
 
-.main-content .form-control .label:last-child {
-  text-align: right;
-}
-
-.main-content .form-control .label:last-child .submit {
-  display: inline-block;
-  line-height: 1.5;
-  padding: 5px 30px;
-  border: none;
-  background-color: #54595a;
-  color: #fff;
+.main-content form .btn-getpass {
+  margin-top: 20px;
+  min-width: 12%;
+  width: 25%;
+  font-weight: bold;
   cursor: pointer;
+  padding: 5px;
+  color: #fff;
+  background: -moz-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
+  background: -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
+  background: -ms-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
+  font-size: 16px;
 }
 
-/* Footer */
+.main-content form .btn-getpass:hover {
+  background: #91ad41;
+}
+
+/*Footer */
 .footer .row-top {
   margin-top: 40px;
   padding-top: 35px;
@@ -494,7 +463,6 @@ ul {
 }
 
 .footer .col .wrap-info {
-  -webkit-animation: banner 14s ease infinite;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
@@ -558,7 +526,6 @@ ul {
   font-size: 13px;
   color: rgb(196, 32, 38);
 }
-
 @keyframes NavFadeIn {
   from {
     transform: translateY(50px);
