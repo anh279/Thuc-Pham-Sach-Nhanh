@@ -19,7 +19,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     <link rel="stylesheet" href="./assets/css/signin.css" />
   </head>
   <body>
@@ -126,22 +125,22 @@
                   </a>
               </div>
             </div>
-            <form onsubmit="login()" method="post">
-              <div class="input-field">
-                <input type="email" placeholder="Email" id="email" >
-              </div>
-              <div class="input-field">
-                <input type="password" placeholder="Mật khẩu" id="password" >
-              </div>
-              <button type="submit" class="btn-submit">Đăng nhập</button>
-            </form>
-            <div class="help">
-              <a href="./getpass.html" class="link">Quên mật khẩu</a>
-              <p  class="desc">
-                Bạn chưa có tài khoản vui lòng đăng ký tại đây
-                <a href="./SignUp.html" class="link">tại đây</a>
-              </p>
-            </div>
+                <form onsubmit="login()">
+                    <div class="input-field">
+                        <input type="text" placeholder="Tài khoản" id="username" >
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Mật khẩu" id="password" >
+                    </div>
+                    <button id="btn" class="btn-submit">Đăng nhập</button>
+                </form>
+                <div class="help">
+                <a href="./getpass.html" class="link">Quên mật khẩu</a>
+                <p  class="desc">
+                    Bạn chưa có tài khoản vui lòng đăng ký tại đây
+                    <a href="./SignUp.html" class="link">tại đây</a>
+                </p>
+                </div>
           </div>
         </main>
      <footer class="footer">
@@ -209,5 +208,7 @@
           </div>
       </div>
     </footer>
+    
   </body>
+  <script src="./main.js"></script>
 </html>

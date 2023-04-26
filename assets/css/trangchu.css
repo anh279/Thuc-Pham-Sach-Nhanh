@@ -44,8 +44,6 @@ body {
 
 .heading .text-gradient {
   background: -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 a {
@@ -550,9 +548,15 @@ a {
 }
 
 .heading .text-gradient {
+  background: -moz-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
   background: -webkit-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
+  background: -ms-linear-gradient(35deg, #91ad41 0%, #ff8a6c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
 }
 
 .heading .desc {
